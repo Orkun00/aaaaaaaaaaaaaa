@@ -1,0 +1,6 @@
+asyncio~=3.4.3
+aiohttp~=3.11.10
+websockets
+psutil~=6.1.0
+Flask~=3.1.0
+Werkzeug~=3.1.3

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/dashboard.css" />
+    <link rel="stylesheet" href="css/common.css" />
+  </head>
+  <body>
+    <div class="dashboard-container">
+      <!-- Logout Button -->
+      <div id="logout-container">
+        <button id="logout-button">Logout</button>
+      </div>
+
+      <!-- System Stats Section -->
+      <div id="stats-container" class="styled-container">
+        <h2>System Statistics</h2>
+        <div id="stats-content">
+          <!-- Stats will populate here -->
+        </div>
+      </div>
+
+      <!-- Current Logged-In Users Section -->
+      <div id="users-container">
+        <h2>Current Logged-In Users</h2>
+        <ul id="users-list">
+          <!-- List of users will populate here -->
+        </ul>
+      </div>
+
+      <!-- Processes Section -->
+      <div id="processes-container">
+        <h2>Processes</h2>
+        <p id="process-summary"></p>
+        <table id="processes-table">
+          <thead>
+            <tr>
+              <th><button id="sort-pid">PID</button></th>
+              <th><button id="sort-name">Name</button></th>
+              <th><button id="sort-cpu">CPU</button></th>
+              <th><button id="sort-memory">Memory</button></th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Process rows will populate here -->
+          </tbody>
+        </table>
+      </div>
+
+      <!-- System Log Section -->
+      <div id="log-container">
+        <h2>System Log (Last 50 Lines)</h2>
+        <ul id="log-list" style="max-height: 150px; overflow-y: auto">
+          <!-- Log entries will populate here -->
+        </ul>
+        <div
+          style="
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+          "
+        >
+        </div>
+      </div>
+
+      <!-- Last 10 Users Logged Section -->
+      <div id="last-users-container">
+        <h2>Last 10 Users Logged</h2>
+        <ul id="last-users-list" style="max-height: 150px; overflow-y: auto">
+          <!-- Users will populate here -->
+        </ul>
+        <div
+          id="last-users-navigation"
+          style="
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+          "
+        >
+          <button id="prev-users">Previous</button>
+          <button id="next-users">Next</button>
+        </div>
+      </div>
+
+      <!-- System Uptime Section -->
+      <div id="uptime-container" class="styled-container">
+        <h2>System Uptime</h2>
+        <p id="uptime-content">Loading...</p>
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

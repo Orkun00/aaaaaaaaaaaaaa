@@ -1,0 +1,92 @@
+/* General Body Styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #f5f5f5, #2f013a);
+    font-family: Arial, sans-serif;
+}
+
+/* Outer container to centralize the login container */
+.outer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+/* Styling for the Login Container */
+.login-container {
+    width: 360px; /* Increased width */
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.219);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Styling for the Login Heading */
+.login-container h1 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 8px;
+    background: #74517970;
+    color: white;
+    font-weight: bold;
+}
+
+/* Styling for Form Fields */
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    color: #330239;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.142);
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+    background: rgba(207, 188, 216, 0.475); /* Semi-transparent background */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the Login Button */
+button {
+    width: 100%;
+    padding: 12px;
+    background: #28a746ab;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background: #218838;
+}
+
+/* Styling for Error Messages */
+.error-message {
+    color: red;
+    margin-top: 10px;
+    font-size: 14px;
+}

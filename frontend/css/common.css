@@ -1,0 +1,37 @@
+/* General Body Styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #ede4f0, #2f013a);
+    font-family: Arial, sans-serif;
+}
+
+/* General Container Styling */
+.container {
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.219);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* General Button Styling */
+button {
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(227, 207, 240);
+    background-color: rgba(122, 39, 147, 0.466); 
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: rgba(55, 8, 71, 0.466); 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.265);
+}
+

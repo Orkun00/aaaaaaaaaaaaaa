@@ -1,0 +1,25 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "${HOST_PORT}:8765"  # Host port mapped to container port
+    volumes:
+      # Mount frontend and src directories for development (optional)
+      - ./frontend:/app/frontend
+      - ./src:/app/src
+      # Mount SSL certificates (if not copied into the image)
+      # - ./cert:/app/cert
+      # Mount logs directory (ensure your app writes logs here)
+      - /var/log:/var/log:ro
+    environment:
+      - ENVIRONMENT=development
+      - HOST_PORT=${HOST_PORT}  # Pass the host port as an environment variable
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "https://localhost:8765/"]
+      interval: 1m30s
+      timeout: 10s
+      retries: 3
+
